@@ -18,7 +18,7 @@ jobs:
     - name: set up environment variables
       run: |
         echo "BSKY_APP_PASSWORD=${{ secrets.BSKY_APP_PASSWORD }}" >> $GITHUB_ENV
-        echo "BSKY_HANDLE=${{ secrets.BSKY_HANDLE }" >> $GITHUB_ENV
+        echo "BSKY_HANDLE=${{ secrets.BSKY_HANDLE }}" >> $GITHUB_ENV
     - name: install dependencies
       run: pip install atproto wand && sudo apt-get install imagemagick
     - name: post to bluesky
